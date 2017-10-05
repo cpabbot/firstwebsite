@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>
+/*$text = "Anything";
+$var_str = var_export($text, true);
+$var = "<?php\n\n\$text = $var_str;\n\n?>";
+file_put_contents('data.txt', $var);*/
+  /* var textToSave = 'this is a test';
+
+var hiddenElement = document.createElement('a');
+
+hiddenElement.href = 'data:attachment/text,' + encodeURI(textToSave);
+hiddenElement.target = '_blank';
+hiddenElement.download = 'myFile.txt';
+hiddenElement.click();
+*/
+</script>
+</head>
+<body>
+<script language="javascript">
+function WriteToFile()
+{
+var fso = new ActiveXObject("Scripting.FileSystemObject");
+var s = fso.CreateTextFile("C:\\NewFile.txt", true);
+var text=document.getElementById("TextArea1").innerText;
+s.WriteLine(text);
+s.WriteLine('***********************');
+s.Close();
+}
+</script>
+
+<form name="abc">
+<textarea name="text">FIFA</textarea>
+<button onclick="WriteToFile()">Click to save</Button>  
+</form> 
+
+</body>
+</html>

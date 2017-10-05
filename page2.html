@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Second HTML Page</title>
+<style>
+ body {
+        background-color: #ccffff;
+        background-image: url("http://www.institute-kravmaga.co.uk/wp-content/uploads/2013/03/gradient_bg.png");
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+ ul.sidebar {
+     background-color: grey;
+     width:0%;
+     float: left;
+     height: 100%;
+     position: fixed;
+     left: 0;
+     top: 0;
+     margin-top: 0%;
+     transition: 0.3s;
+     opacity: 0;
+     margin-top: 3.5%;
+ }
+ ul.sidebar:hover {
+     background-color: white;
+     width:13%;
+     float: left;
+     height: 100%;
+     position: fixed;
+     left: 0;
+     top: 0;
+     box-shadow: 10px 10px 25px grey;
+     opacity: 100;
+ }
+ li.sidebar {
+     list-style-type: none;
+     padding: 10px;
+ }
+ li.sidebar a {
+     text-decoration: none;
+     color: black;
+     padding: 14px 16px;
+     display: block;
+ }
+ li.sidebar a:hover:not(.active) {
+    background-color: #f2f2f2;
+    }
+ h1.header {
+        font-family:verdana;
+        font-size:2.5em;
+        text-align:center;
+        margin-top: 70px;
+   }
+ ul.hNav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 10px 10px 25px grey;
+  }
+ li.hNav {
+     float: left;
+ }
+ li.hNav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+ li.hNav a:hover:not(.active) {
+    background-color: #111;
+    }
+ .active {
+    background-color: #4CAF50;
+    }
+ img.leftIcon {
+     position: absolute;
+     top: 60px;
+ }
+ .main {
+        border: 3px solid #000066;
+        border-color: blue;
+        margin: auto;
+        margin-top: 70px;
+        margin-right: 0;
+        left: 0;
+        width: 91%;
+        padding: 50px 30px 50px 80px;
+        background-color: #33ccff;
+    }
+ p.main {
+        <!--font-size: "6";-->
+    }
+ div.mainmain {
+     margin-left: 0%;
+ }
+   }
+</style>
+    <script type='text/javascript'>
+    /*$(function() {
+    // Stick the #nav to the top of the window
+    var nav = $('.hNav');
+    var navHomeY = nav.offset().top;
+    var isFixed = false;
+    var $w = $(window);
+    $w.scroll(function() {
+        var scrollTop = $w.scrollTop();
+        var shouldBeFixed = scrollTop > navHomeY;
+        if (shouldBeFixed && !isFixed) {
+            nav.css({
+                position: 'fixed',
+                top: 0,
+                left: nav.offset().left,
+                width: nav.width()
+            });
+            isFixed = true;
+        }
+        else if (!shouldBeFixed && isFixed)
+        {
+            nav.css({
+                position: 'static'
+            });
+            isFixed = false;
+        }
+    });
+});*/
+</script>
+</head> 
+
+<body>
+<div class="sidebar">
+    <ul class="sidebar">
+  <li class="sidebar"><a class="active" href="#home">Home</a></li>
+  <li class="sidebar"><a href="#news">News</a></li>
+  <li class="sidebar"><a href="#contact">Contact</a></li>
+  <li class="sidebar"><a href="#about">About</a></li>
+</ul>
+</div>
+
+<div class="mainmain">
+<div class="hNav">
+  <ul class="hNav" style="float:right;">
+    <li class = "hNav"><a class="active" href="#home">Home</a></li>
+    <li class = "hNav"><a href=file:///home/chronos/u-1d12a0e13a9c8e601311d735f5b1eedc316b6dbb/Downloads/index.html#home>Page1</a></li>
+    <li class = "hNav"><a href="#contact">Contact</a></li>
+    <li class = "hNav"><a href="#about">About</a></li>
+  </ul>
+</div>
+<h1 class="header">
+ <img src="Drawing.png" alt="Ignyte" width="220" height="50" onmouseover="this.width='250'; this.height='55'" onmouseout="this.width='220'; this.height='50'"> <!--ff0000-->
+    &nbsp
+    <img src="https://yt3.ggpht.com/-N0C2U8nbhAQ/AAAAAAAAAAI/AAAAAAAAAAA/gVI1o9Y4_LQ/s900-c-k-no/photo.jpg" alt="Ignyte" width="70" height="70">
+    </h1>
+<img class="leftIcon" src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/glossy-black-icons-arrows/008023-glossy-black-icon-arrows-double-arrowhead-left.png" alt="icon" width="30" height="30">
+<div class="main">
+  <p> <font size="6">
+     Some text for the website
+      </font> </p>
+    <p>some more text...</p><p>some more text...</p><p>some more text...</p><p>some more text...</p><p>some more text...</p><p>some more text...</p><p>some more text...</p><p>some more text...</p><p>some more text...</p><p>some more text...</p><p>some more text...</p><p>some more text...</p><p>some more text...</p>
+</div>
+</div>
+</body>
+    
+</html>
